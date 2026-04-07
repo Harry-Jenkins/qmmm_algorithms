@@ -276,5 +276,5 @@ for n_tot in range(n_max, n_max+1):
     print("Number of QM--MM bonds:", nx.cut_size(EM.G, qm))
     print("Ratio:", nx.cut_size(EM.G, qm)/n_tot)
     ##Uncomment the following to view the final QM region using ase.##
-    #del bulk_atoms[[a.index for a in bulk_atoms if a.index not in qm]]
-    #view(bulk_atoms)
+    del bulk_atoms[[a.index for a in bulk_atoms if a.index not in qm]]
+    view(bulk_atoms)
