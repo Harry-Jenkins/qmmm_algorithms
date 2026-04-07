@@ -4,7 +4,7 @@
 # dependencies = ["ase", "networkx"]
 # ///
 
-"""Finds an ideal QM region partition within an Atoms object.
+"""Finds an ideal QM region partition within an Atoms object, for QM models.
 
 Ideal here is defined as having the lowest edge cut, that is the fewest
 bonds between the QM region and the surrounding MM region.
